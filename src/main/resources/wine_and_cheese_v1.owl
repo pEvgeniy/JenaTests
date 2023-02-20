@@ -1,0 +1,35 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="http://www.nti.ru/wine-ontology/1.5.0#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Class rdf:about="http://www.nti.ru/wine-ontology/1.5.0#Wine">
+    <j.0:WhiteWine>whiteWine</j.0:WhiteWine>
+    <j.0:RedWine>redWine</j.0:RedWine>
+  </owl:Class>
+  <owl:ObjectProperty rdf:about="http://www.nti.ru/wine-ontology/1.5.0#RedWine">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.nti.ru/wine-ontology/1.5.0#OldCheese"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:about="http://www.nti.ru/wine-ontology/1.5.0#YoungCheese">
+    <owl:inverseOf>
+      <owl:ObjectProperty rdf:about="http://www.nti.ru/wine-ontology/1.5.0#WhiteWine"/>
+    </owl:inverseOf>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:about="http://www.nti.ru/wine-ontology/1.5.0#yellowCheese"/>
+  <j.0:Wine rdf:about="http://www.nti.ru/wine-ontology/1.5.0#DorBlue">
+    <j.0:yellowCheese> YellowCheese</j.0:yellowCheese>
+    <j.0:YoungCheese> YoungCheese</j.0:YoungCheese>
+  </j.0:Wine>
+  <j.0:Wine rdf:about="http://www.nti.ru/wine-ontology/1.5.0#BeaulieuVineyard">
+    <j.0:WhiteWine>White</j.0:WhiteWine>
+  </j.0:Wine>
+  <j.0:Wine rdf:about="http://www.nti.ru/wine-ontology/1.5.0#AbrauDurso">
+    <j.0:RedWine>Red</j.0:RedWine>
+  </j.0:Wine>
+  <j.0:Wine rdf:about="http://www.nti.ru/wine-ontology/1.5.0#UsWine1974">
+    <j.0:WhiteWine>White</j.0:WhiteWine>
+  </j.0:Wine>
+</rdf:RDF>
